@@ -18,7 +18,7 @@ const LoginSocialOnly = () => {
                 <Link className='w-full mx-auto h-9 max-w-[271px] mt-3 sm:mt-4 md:mt-5 bg-white rounded-[3px] flex justify-center px-3'>
                     <img width={95} height={35} src={Github} alt="Linkedin" />
                 </Link>
-                <div className='flex items-center justify-center mt-4 sm:mt-8 md:mt-16 lg:mt-[74px] leading-133 text-lg text-white font-normal'>Don't have an account?&nbsp; <Link to="/create-user" className='text-primary font-bold'>Sign Up</Link></div>
+                <div className='flex items-center justify-center mt-4 sm:mt-8 leading-133 text-lg text-white font-normal'>Have an account?&nbsp; <Link to="/create-company" className='text-primary font-bold'>Login</Link></div>
             </form>
         </div>
     )
