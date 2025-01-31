@@ -15,7 +15,7 @@ const CreateCompany = () => {
     console.log(data);
   };
   return (
-    <div className="mt-8 sm:mt-12 lg:mt-[60px] container xl:px-0 sm:px-4 px-3 pb-12">
+    <div className="mt-8 sm:mt-12 lg:mt-[60px] container xl:px-0 sm:px-4 px-3 pb-12 relative z-50">
       <Heading text="Create an account" />
       <Paragraph text="Create an account and start using Jobhunt" />
       <form

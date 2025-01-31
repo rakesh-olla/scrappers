@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const LoginSocialOnly = () => {
   return (
-    <div className="mt-8 sm:mt-12 lg:mt-[60px] container xl:px-0 sm:px-4 px-3 pb-12">
+    <div className="mt-8 sm:mt-12 lg:mt-[60px] container xl:px-0 sm:px-4 px-3 pb-12 relative z-50">
       <Heading text="Create an account" />
       <Paragraph text="We use LinkedIn or GitHub Login to verify you as a professional Developer / Agency" />
       <form className="px-4 sm:px-8 md:px-10 lg:px-[52px] py-4 sm:py-6 lg:py-7 rounded-[3px] bg-dark-400 border-[2px] border-dark-800 w-full max-w-[500px] mx-auto mt-5 lg:mt-9">

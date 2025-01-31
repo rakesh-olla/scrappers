@@ -10,8 +10,8 @@ import BottomRightImg from "./assets/images/png/bottom-right.png";
 function App() {
   return (
     <div className="relative overflow-hidden flex flex-col min-h-screen justify-between">
+      <Navbar />
       <main>
-        <Navbar />
         <Routes>
           <Route path="/create-company" element={<CreateCompany />} />
           <Route path="/create-user" element={<LogicSocialOnly />} />
