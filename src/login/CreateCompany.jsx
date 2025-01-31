@@ -15,7 +15,7 @@ const CreateCompany = () => {
             <Heading text="Create an account" />
             <Paragraph text="Create an account and start using Jobhunt" />
             <form onSubmit={handleSubmit(onSubmit)} className='p-4 sm:p-8 md:p-10 lg:p-[52px] rounded-[3px] bg-dark-400 border-[2px] border-dark-800 w-full max-w-[500px] mx-auto mt-6 md:mt-8 lg:mt-16'>
-                <Paragraph className="mt-0 text-start mx-0" text="Name" />
+                <Paragraph className="!mt-0 text-start !mx-0" text="Name" />
                 <input
                     className='px-4 lg:px-[22px] py-3 md:py-[18px] rounded-[3px] border-[2px] border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent'
                     type="text"
@@ -62,7 +62,7 @@ const CreateCompany = () => {
                     </p>
                 </div>
                 {errors.termsAndConditions && <span className="text-red-500 text-sm pt-1">{errors.termsAndConditions.message}</span>}
-                <Button className="w-full text-center mt-5" greenBtn="Create Account" />
+                <Button className="w-full text-center mt-5 !py-2" greenBtn="Create Account" />
                 <div className='flex items-center justify-center mt-5 leading-133 text-lg text-white font-normal'>Have an account?<Link to="/login" className='text-primary font-bold'>&nbsp;Login</Link></div>
             </form>
         </div>
