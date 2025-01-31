@@ -1,6 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +15,7 @@
 body {
   /* font-family: "Plus Jakarta Display", sans-serif !important; */
   font-family: "Work Sans", serif;
-  @apply bg-dark-500
+  @apply bg-dark-500;
 }
 
 ::-webkit-scrollbar {
@@ -24,4 +24,12 @@ body {
 
 .font-outfit {
   font-family: "Outfit", serif !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232329;
 }
