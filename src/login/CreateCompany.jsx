@@ -11,7 +11,7 @@ const CreateCompany = () => {
         console.log(data);
     }
     return (
-        <div className='mt-14 md:mt-16 container xl:px-0 px-4'>
+        <div className='mt-14 md:mt-16 container xl:px-0 px-4 relative z-50'>
             <Heading text="Create an account" />
             <Paragraph text="Create an account and start using Jobhunt" />
             <form onSubmit={handleSubmit(onSubmit)} className='p-4 sm:p-8 md:p-10 lg:p-[52px] lg:pb-[58px] rounded-[3px] bg-dark-400 border-[2px] border-dark-800 w-full max-w-[500px] mx-auto mt-6 md:mt-8 lg:mt-16'>
