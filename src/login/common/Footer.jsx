@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="lg:max-w-[1347px] container px-3 sm:px-4 xl:px-0 flex justify-between items-center md:items-start max-md:flex-col mt-10 md:mt-14 lg:mt-28 xl:mt-[131px] pb-5 relative z-50">
+    <div className="lg:max-w-[1347px] container px-3 sm:px-4 min-[1400px]:px-0 flex justify-between items-center md:items-start max-md:flex-col pb-5 relative z-50">
       <div className="leading-133 font-bold md:text-lg text-white max-md:text-center">
         The first job portal—built for the{" "}
         <span className="text-primary">DEVELOPER!&nbsp;</span>

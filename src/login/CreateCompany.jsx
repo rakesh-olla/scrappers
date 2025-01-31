@@ -24,7 +24,7 @@ const CreateCompany = () => {
       >
         <Paragraph className="!mt-0 text-start !mx-0" text="Name" />
         <input
-          className="px-3 sm:px-4 lg:px-[22px] py-3 md:py-4 rounded-[3px] border-[2px] border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent"
+          className="px-3 sm:px-4 lg:px-[22px] placeholder:text-white placeholder:opacity-100 py-3 md:py-4 rounded-[3px] border-[2px] border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent"
           type="text"
           name="fullName"
           placeholder="Full name"
@@ -39,7 +39,7 @@ const CreateCompany = () => {
         {/* Corrected Label Text for Email */}
         <Paragraph className="!mt-5 text-start !mx-0" text="Email" />
         <input
-          className="px-3 sm:px-4 lg:px-[22px] py-3 md:py-4 rounded-[3px] border-[2px] border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent"
+          className="px-3 sm:px-4 lg:px-[22px] placeholder:text-white placeholder:opacity-100 py-3 md:py-4 rounded-[3px] border-[2px] border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent"
           type="email"
           {...register("email", {
             required: "Email is required",
@@ -58,7 +58,7 @@ const CreateCompany = () => {
 
         <Paragraph className="!mt-5 text-start !mx-0" text="Password" />
         <input
-          className="px-3 sm:px-4 lg:px-[22px] py-3 md:py-4 rounded-[3px] border-[2px] border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent"
+          className="px-3 sm:px-4 lg:px-[22px] placeholder:text-white placeholder:opacity-100 py-3 md:py-4 rounded-[3px] border-[2px] border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent"
           type="password"
           name="password"
           placeholder="Password"
@@ -69,13 +69,14 @@ const CreateCompany = () => {
             {errors.password.message}
           </span>
         )}
-        <div className="mt-5 flex items-center gap-[6px]">
+        <div className="mt-5 flex items-center gap-1.5">
           <input
             type="checkbox"
             {...register("termsAndConditions", {
               required: "You must agree to the T&C",
             })}
-            className="size-5 bg-transparent rounded-[3px] border-[2px] border-dark-800 accent-primary"
+            // className="size-5 bg-transparent rounded-[3px] border-[2px] border-dark-800 accent-primary"
+            className="appearance-none w-5 h-5 border-2 border-white  bg-transparent checked:bg-primary checked:border-primary relative"
           />
           <p className="text-white text-sm lg:text-base">
             I have read and agree to the&nbsp;
