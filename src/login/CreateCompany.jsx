@@ -11,13 +11,13 @@ const CreateCompany = () => {
         console.log(data);
     }
     return (
-        <div className='mt-16 container xl:px-0 px-4'>
+        <div className='mt-14 md:mt-16 container xl:px-0 px-4'>
             <Heading text="Create an account" />
             <Paragraph text="Create an account and start using Jobhunt" />
-            <form onSubmit={handleSubmit(onSubmit)} className='p-6 sm:p-8 md:p-10 lg:p-[52px] rounded-[3px] bg-dark-500 border border-dark-800 w-full max-w-[500px] mx-auto mt-6 md:mt-8 lg:mt-16'>
+            <form onSubmit={handleSubmit(onSubmit)} className='p-4 sm:p-8 md:p-10 lg:p-[52px] rounded-[3px] bg-dark-500 border border-dark-800 w-full max-w-[500px] mx-auto mt-6 md:mt-8 lg:mt-16'>
                 <Paragraph className="mt-0 text-start mx-0" text="Name" />
                 <input
-                    className='px-4 lg:px-[22px] py-[18px] rounded-[3px] border border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent'
+                    className='px-4 lg:px-[22px] py-3 md:py-[18px] rounded-[3px] border border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent'
                     type="text"
                     name="fullName"
                     placeholder="Full name"
@@ -28,7 +28,7 @@ const CreateCompany = () => {
                 {/* Corrected Label Text for Email */}
                 <Paragraph className="!mt-5 text-start !mx-0" text="Email" />
                 <input
-                    className='px-4 lg:px-[22px] py-[18px] rounded-[3px] border border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent'
+                    className='px-4 lg:px-[22px] py-3 md:py-[18px] rounded-[3px] border border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent'
                     type="email"
                     {...register("email", {
                         required: "Email is required",
@@ -43,7 +43,7 @@ const CreateCompany = () => {
 
                 <Paragraph className="!mt-5 text-start !mx-0" text="Password" />
                 <input
-                    className='px-4 lg:px-[22px] py-[18px] rounded-[3px] border border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent'
+                    className='px-4 lg:px-[22px] py-3 md:py-[18px] rounded-[3px] border border-dark-800 mt-[5px] leading-117 w-full outline-none text-sm text-white bg-transparent'
                     type="password"
                     name="password"
                     placeholder="Password"
@@ -63,7 +63,7 @@ const CreateCompany = () => {
                 </div>
                 {errors.termsAndConditions && <span className="text-red-500 text-sm pt-1">{errors.termsAndConditions.message}</span>}
                 <Button className="w-full text-center mt-5" greenBtn="Create Account" />
-                <div className='flex items-center justify-center mt-5 leading-133 text-lg text-white font-normal'>Have an account? <Link to="/login" className='text-primary font-bold'>Login</Link></div>
+                <div className='flex items-center justify-center mt-5 leading-133 text-lg text-white font-normal'>Have an account?<Link to="/login" className='text-primary font-bold'>&nbsp;Login</Link></div>
             </form>
         </div>
     )
