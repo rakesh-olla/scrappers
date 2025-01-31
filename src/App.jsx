@@ -1,9 +1,8 @@
 import { Route, Routes } from "react-router-dom";
+import Navbar from "./login/common/Navbar";
 import CreateCompany from "./login/CreateCompany";
 import LoginSocialOnly from "./login/LoginSocialOnly";
-import CreateUser from './login/CreateUser'
-import Navbar from './login/common/Navbar'
-
+import CreateUser from "./login/CreateUser";
 
 function App() {
   return (

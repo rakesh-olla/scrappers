@@ -1,14 +1,27 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --color-primary: #ffc62c;
+  --color-secondry: #838383;
+  --dark--: "class";
+}
+
 body {
-    font-family: "Work Sans", serif;
-    @apply bg-dark-500
+  /* font-family: "Plus Jakarta Display", sans-serif !important; */
+  font-family: "Work Sans", serif;
+  @apply bg-dark-500
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .font-outfit {
-    font-family: "Outfit", serif !important;
+  font-family: "Outfit", serif !important;
 }
