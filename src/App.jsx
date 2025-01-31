@@ -1,14 +1,19 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import CreateCompany from "./login/CreateCompany";
+import LoginSocialOnly from "./login/LoginSocialOnly";
+import CreateUser from './login/CreateUser'
+import Navbar from './login/common/Navbar'
+
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1 class="text-3xl font-bold underline text-redLight">Hello world!</h1>
+      <Navbar />
+      <Routes>
+        <Route path="/login" element={<CreateCompany />} />
+        <Route path="/login/social" element={<LoginSocialOnly />} />
+        <Route path="/login/social/create-account" element={<CreateUser />} />
+      </Routes>
     </>
   );
 }
