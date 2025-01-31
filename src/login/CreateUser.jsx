@@ -10,7 +10,7 @@ const CreateUser = () => {
         <div className='mt-14 md:mt-16 container xl:px-0 px-4'>
             <Heading text="Log in" />
             <Paragraph text="Please fill use your LinkedIn or Github Account to login" />
-            <form className='p-6 sm:p-8 md:p-10 lg:pb-[38px] lg:p-[52px] rounded-[3px] bg-dark-500 border border-dark-800 w-full max-w-[500px] mx-auto mt-5'>
+            <form className='p-6 sm:p-8 md:p-10 lg:pb-[38px] lg:p-[52px] rounded-[3px] bg-dark-400 border border-dark-800 w-full max-w-[500px] mx-auto mt-5'>
                 <Link className='w-full mx-auto max-w-[271px] py-[6px] bg-white rounded-[3px] flex justify-center px-3'>
                     <img width={91} height={19} src={Linkedin} alt="Linkedin" />
                 </Link>
